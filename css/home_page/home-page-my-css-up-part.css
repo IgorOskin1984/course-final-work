@@ -1,0 +1,228 @@
+/* pants-------------------------------------- */
+.pants-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem;
+}
+
+.pants-wrapper>.pants-text-div {
+    width: 40%;
+    /*text-align: left;*/
+}
+.pants-text-div>.pants-discription {
+    text-align: left;
+}
+.pants-title {
+    color: #001F3D;
+}
+.pants-text-div>.pants-link {
+    max-width: 40%;
+    margin: 0;
+}
+
+@media (min-width:1024px) and (max-width:1280px) {
+    .pants-wrapper>img {
+        vertical-align: middle;
+        width: 50%;
+        height: 100%;
+    }
+}
+@media (min-width:912px) and (max-width:1024px) {
+    .pants-title {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .pants-text-div>.pants-discription {
+        font-size: 1.7rem;
+        line-height: 2rem;
+        padding: 2rem 0;
+        margin: 0;
+    }
+    .pants-text-div>.pants-link {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}
+@media (min-width:541px) and (max-width:912px) {
+    .pants-wrapper {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .pants-wrapper>.pants-text-div {
+        width: 100%;
+    }
+    .pants-title {
+        font-size: 5rem;
+        padding: 2rem 0;
+    }
+    .pants-text-div>.pants-discription {
+        font-size: 3rem;
+        line-height: 5rem;
+        padding: 0 0 2rem 0;
+        margin: 0;
+    }
+    .pants-text-div>.pants-link {
+        font-size: 3rem;
+        padding: 2rem;
+        float: right;
+    }
+}
+@media (max-width:540px) {
+    .pants-wrapper {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .pants-wrapper>.pants-text-div {
+        width: 100%;
+    }
+    .pants-text-div>.pants-title {
+        font-size: 4rem;
+        line-height: 5rem;
+        padding-top: 2rem;
+    }
+    .pants-text-div>.pants-discription {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .pants-text-div>.pants-link {
+        float: right;
+        font-size: 1.5rem;
+        min-width: 50%;
+    }
+}
+@media (max-width:414px) {
+    .pants-text-div>.pants-link {
+        min-width: 60%;
+        padding: 0.5rem 0;
+    }
+}
+@media (max-width:280px) {
+    .pants-text-div>.pants-title {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .pants-text-div>.pants-discription {
+        line-height: 2rem;
+        text-align: justify;
+    }
+    .pants-text-div>.pants-link {
+        min-width: 100%;
+    }
+}
+
+
+/* sale section...................................... */
+.sale-sreen-540-and-lower {
+    display: none;
+}
+
+.sale-wrapper {
+    display: flex;
+    justify-content: space-around;
+    background-color: #E5E5E5;
+    padding: 5rem;
+    padding-bottom: 0;
+}
+
+.sale-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    text-align: center;
+}
+
+.sale-img-wrap {
+    display: flex;
+    flex-direction: column;
+    /*background-image: url(../img/sale/image_1.jpg);*/
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.sale-img-banner {
+    position: relative;
+    bottom: 10rem;
+    /*width: 100%;*/
+    /*height: 5rem;*/
+
+    background-color: #A04955;
+    opacity: 0.8;
+    color: white;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 10rem;
+}
+
+.sale-discription,
+.sale-link,
+.pants-discription,
+.pants-link {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #000000;
+    margin-bottom: 3rem;
+}
+.sale-link,
+.pants-link {
+    text-align: center;
+    margin: 0 auto;
+    min-width: 70%;
+    border: 1px solid #000000;
+    padding: 1rem 0;
+}
+.sale-text-div {
+    position: relative;
+    bottom: 5rem;
+}
+
+@media (max-width:1024px) {
+    .sale-img-banner {
+        font-size: 2rem;
+        line-height: 4rem;
+        bottom: 0;
+    }
+    .sale-text-div {
+        bottom: 0;
+        top: 2rem;
+        padding-bottom: 4rem;
+    }
+    .sale-discription {
+        font-size: 1.5rem;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+    .sale-link {
+        font-size: 1rem;
+        padding: 0;
+    }
+}
+/* display none css........................ */
+@media (max-width:912px) {
+    .sale-sreen-540-and-lower {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+        background-color: #E5E5E5;
+    }
+    .sale-discription{
+        padding: 2rem 0;
+    }
+
+    .sale-link {
+        font-size: 1.5rem;
+    }
+
+    .sale-wrapper {
+        display: none;
+    }
+}

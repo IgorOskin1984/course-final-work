@@ -1,0 +1,271 @@
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: white;
+}
+
+.text-center,
+.under-slider__title,
+.prom-title,
+.pants-title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 8rem;
+    color: white;
+}
+
+.under-slider__discription,
+.under-slider__link,
+.prom-discription,
+.prom-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #000000;
+}
+
+/* =========================================================================== */
+/* promotion */
+.prom-wrapper {
+    background-image: url(../../img/promotion/Rectangle\ 15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 4rem;
+}
+.prom-wrapper>div{
+    padding-left: 10rem;
+}
+
+.prom-title {
+    width: 35%;
+    line-height: 10rem;
+}
+
+.prom-discription {
+    width: 40%;
+    color: #FFFFFF;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    line-height: 4rem;
+
+}
+
+.prom-wrapper>div>.prom-link {
+    color: #FFFFFF;
+    background-color: #A04955;
+    padding: 1rem 4rem;
+}
+
+@media (min-width:913px) and (max-width:1420px) {
+    .prom-wrapper{
+        background-position: right;
+    }
+    .prom-title {
+        width: 100%;
+        font-size: 5rem;
+    }
+    .prom-discription {
+        width: 50%;
+    }
+    .prom-wrapper>div {
+        padding-left: 7rem;
+    }
+}
+
+@media (max-width:912px) {
+    .prom-wrapper {
+        background-position: right;
+    }
+    .prom-title {
+        width: 100%;
+        font-size: 5rem;
+    }
+    .prom-discription{
+        width: 80%;
+    }
+    .prom-wrapper>div {
+        padding-left: 4rem;
+    }
+}
+
+@media (max-width:540px) {
+    .prom-title {
+        width: 100%;
+        font-size: 4rem;
+        line-height: 7rem;
+    }
+    .prom-wrapper {
+        padding-bottom: 2rem;
+    }
+    .prom-discription {
+        width: 100%;
+        padding-bottom: 0rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .prom-wrapper>div{
+        padding-left: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    .prom-wrapper>div>.prom-link {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
+}
+
+@media (min-width:540px) and (max-width:540px) {
+    .prom-title {
+        font-size: 5.5rem;
+    }
+}
+
+@media (max-width:300px) {
+    .prom-wrapper {
+        padding-bottom: 0.5rem;
+        background-position: right;
+    }
+}
+
+
+/* =========================================================================== */
+/* slider */
+.card-title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.card {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #A04955;
+    border-color: #A04955;
+    border-radius: 0;
+    width: 80%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.content {
+    background-color: #A04955;
+    height: 30rem;
+    padding: 0;
+}
+
+@media (min-width: 912px) and (max-width:1200px) {
+    .card-title {
+        font-size: 1.2rem;
+        /*line-height: 1rem;*/
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:449px) {
+    .content {
+        height: 45rem;
+    }
+
+    .text-center {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+
+/* =========================================================== */
+/* under-slider */
+.under-slider {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.under-slider__title {
+    color: #001F3D;
+}
+
+
+
+.under-slider__link {
+    border: 1px solid #000000;
+    padding: 1rem 5rem;
+}
+
+.under-slider__discription {
+    margin-bottom: 3.5rem;
+}
+
+.under-slider__background {
+    background-color: #F3F3F3;
+    height: 30rem;
+    position: relative;
+    top: 40rem;
+    z-index: -1;
+}
+
+/* --------------------------------------------------- */
+@media (max-width:1024px) {
+    .under-slider {
+        margin-top: -10rem;
+    }
+}
+
+@media (max-width:912px) {
+    .under-slider{
+        margin-top: 0;
+    }
+}
+
+@media (max-width:550px) {
+    .under-slider {
+        margin-top: 8rem;
+    }
+
+    .under-slider__background {
+        height: 40rem;
+        top: 50rem;
+    }
+
+    .under-slider__discription {
+        padding: 0 1.1rem;
+    }
+}
+
+@media (max-width:449px) {
+    .under-slider {
+        margin-top: -35rem;
+    }
+
+    .under-slider__background {
+        height: 50rem;
+        top: 60rem;
+    }
+}
+
+@media (max-width:300px) {
+    .under-slider {
+        margin-top: -30rem;
+    }
+
+    .under-slider__link {
+        font-size: 1rem;
+    }
+
+    .under-slider__discription {
+        padding: 0;
+    }
+}

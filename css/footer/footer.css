@@ -1,0 +1,151 @@
+body {
+    margin: 0 auto;
+    max-width: 1240px;
+    background-color: #FFFFFF;
+}
+
+ul {
+    display: inline-block;
+}
+
+.footer-ul-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #A04955;
+    padding: 2rem 0;
+}
+
+.footer-second-level-flex-div ul {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.footer-second-level-flex-div,
+.footer-second-level-flex-div ul li,
+.footer-second-level-flex-div a {
+    color: white;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.footer-ul-wrapper>ul {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.footer-ul-wrapper,
+.footer-ul-wrapper>ul>li,
+.footer-ul-wrapper a {
+    color: white;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* footer-second-level-flex-div */
+/* ......................................... */
+.footer-second-level-flex-div {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ............................................... */
+.footer-last-div {
+    padding: 1rem 0;
+    padding-left: 4rem;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+
+/* .......................................... */
+/* form/ input/ button */
+.fooetr-form {
+    width: 100%;
+    height: 4rem;
+    background-color: #F3F3F3;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.fooetr-form>input {
+    padding-left: 2rem;
+    background-color: #F3F3F3;
+}
+
+.fooetr-form>input::placeholder {
+    color: #A04955;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.fooetr-form>button {
+    height: 70%;
+    width: 30%;
+    background-color: #A04955;
+    margin: auto 1rem auto 0;
+    color: #F3F3F3;
+    font-weight: 400;
+}
+
+/* media */
+/* ....................... */
+
+@media (min-width:450px) and (max-width: 912px) {
+
+    .footer-ul-wrapper {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .footer-second-level-flex-div {
+        width: 100%;
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+    }
+
+    .footer-ul-wrapper>ul {
+        text-align: center;
+    }
+
+    .footer-last-div {
+        text-align: center;
+        padding: 14px 0;
+    }
+}
+@media (max-width:449px) {
+
+    .footer-ul-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+
+    .footer-second-level-flex-div {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer-second-level-flex-div>ul {
+        padding-bottom: 1rem;
+    }
+
+    .footer-last-div {
+        text-align: center;
+        padding: 14px 0;
+    }
+}

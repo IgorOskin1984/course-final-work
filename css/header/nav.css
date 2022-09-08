@@ -1,0 +1,99 @@
+/* css для nav */
+
+body {
+    margin: 0 auto;
+    max-width: 1240px;
+    background-color: #FFFFFF;
+}
+
+.nav-link {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+    background-color: #FFFFFF;
+    ;
+}
+
+/*.active {
+    font-weight: 700;
+}*/
+
+.navbar-collapse {
+    margin-left: 10%;
+}
+
+/* класс формы................................... */
+.d-flex {
+    border: 2px solid #A04955;
+    /*background-color: aqua;*/
+    border-radius: 60px ;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-width: 35%;
+    justify-content: space-evenly;
+}
+
+form > button {
+    background-color: white;
+}
+
+form > button > span {
+    padding-left: 1.5rem;
+}
+
+/* класс инпута...................................... */
+.form-control {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    /*  */
+    min-width: 15rem;
+    /*  */
+    width: auto;
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* ............................................................... */
+@media (min-width: 992px) and (max-width: 1180px) {
+    .nav-link {
+        font-size: 14px;
+    }
+    .form-control {
+        font-size: 10px;
+        padding: 8px 0;
+        min-width: 10rem;
+    }
+    .d-flex {
+        justify-content: space-between;
+    }
+}
+@media (min-width: 1180px) and (max-width: 1400px) {
+    .form-control {
+        font-size: 12px;
+    }
+}
+/* ..................................... */
+@media (max-width: 992px) {
+    .d-flex {
+        justify-content: space-between;
+    }
+}
+/* ................................................................ */
+@media (max-width: 768px) {
+    .container-fluid {
+        display: flex;
+    }
+
+    .navbar-brand {
+        width: 50%;
+    }
+    .navbar-brand > img {
+        width: 100%;
+    }
+}

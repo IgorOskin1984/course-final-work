@@ -1,0 +1,127 @@
+/* slider-pants----------------------------- */
+
+/* -------------------card------------------------ */
+.slider-pents-content{
+    background-color: #F1F1F1;
+    padding: 4rem;
+}
+.slider-pents-container {
+    padding-bottom: 2rem;
+}
+.slider-pents-container,
+.slider-pents-title-h-6,
+.slider-pents-title,
+.slider-pants-card-titl,
+.slider-pants-card-price,
+.slider-pants-button>a {
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    color: #333333;
+    font-weight: 500;
+}
+
+.slider-pents-title-h-6 {
+    font-size: 3rem;
+}
+.slider-pents-title {
+    font-size: 6rem;
+}
+
+.slider-pants-card {
+    background-color: #FFFFFF;
+    padding: 2rem 0;
+}
+.slider-pants-card-text-conteiner {
+    /* .............. */
+    height: 25rem;
+    /* .............. */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.slider-pants-card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2.8rem;
+    /*line-height: 3rem;*/
+    vertical-align: baseline;
+    height: 40%;
+    padding: 0 1rem;
+}
+.slider-pants-card-stars {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.slider-pants-card-price {
+    font-weight: 200;
+    font-size: 2rem;
+}
+.slider-pants-card-price>span {
+    font-weight: 500;
+}
+.slider-pants-button>img.slider-pants-button-img {
+    width: 2rem
+}
+.slider-pants-button {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #A04955;
+    padding: 1rem 0;
+}
+.slider-pants-button>a {
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+@media (max-width:1280px) {
+    .slider-pants-card-text-conteiner {
+        height: 20rem;
+    }
+    .slider-pants-card-title {
+        font-size: 2rem;
+        padding: 0;
+        height: 30%;
+    }
+    .slider-pents-content {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width:414px) {
+    .slider-pents-title-h-6 {
+        font-size: 2rem;
+    }
+    .slider-pents-title {
+        font-size: 4rem;
+    }
+    .slider-pents-content {
+        padding-bottom: 1rem;
+    }
+    .slider-pents-content {
+        padding: 0;
+    }
+    .slider-pents-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width:280px) {
+    .slider-pents-title-h-6 {
+        font-size: 1.5rem;
+    }
+    .slider-pents-title {
+        font-size: 3rem;
+    }
+    .slider-pents-content {
+        padding-bottom: 0.1rem;
+    }
+    .slider-pants-button>a {
+        font-size: 1.8rem;
+    }
+}
