@@ -1,11 +1,14 @@
-body {
-    margin: 0 auto;
-    max-width: 1240px;
-    background-color: #FFFFFF;
+footer{
+    background-color: #A04955;
+}
+ul {
+    padding: 0;
 }
 
-ul {
-    display: inline-block;
+.footer-first-div {
+    /*width: 90%;*/
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .footer-ul-wrapper {
@@ -58,6 +61,7 @@ ul {
 
 /* ............................................... */
 .footer-last-div {
+    background-color: white;
     padding: 1rem 0;
     padding-left: 4rem;
     font-family: 'Oswald';

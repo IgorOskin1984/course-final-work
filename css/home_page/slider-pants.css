@@ -27,7 +27,9 @@
 .slider-pents-title {
     font-size: 6rem;
 }
-
+.slider-pents-site-section {
+    /*padding-bottom: 6rem;*/
+}
 .slider-pants-card {
     background-color: #FFFFFF;
     padding: 2rem 0;
